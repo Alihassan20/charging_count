@@ -14,6 +14,19 @@ class _ChargingPageState extends State<ChargingPage> {
       appBar: AppBar(
         title: const Text("إشحن بكام"),
       ),
+      body: Column(
+        children: [
+          Text("أدخل قيمة الشحن "),
+          TextField(
+            decoration: InputDecoration(
+              labelText: 'القيمة',
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(15)
+              )
+            ),
+          )
+        ],
+      ),
     );
   }
 }
